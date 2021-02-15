@@ -5,6 +5,7 @@
 
 body {
     background-color: #27093aeb;
+    font-family: 'Fredoka One', cursive;
 }
 
 header {
@@ -16,9 +17,17 @@ main{
     width: 100%;
 }
 
+footer{
+    margin-top: 5em;
+    text-align: center;
+    letter-spacing: 3px;
+    color: White;
+    font-size: 8pt;
+    font-weight: 100;
+}
+
 /* deadpool title */
 h1 {
-    font-family: 'Fredoka One', cursive;
     color: #FF0016;
     text-transform: uppercase;
     font-size: 50pt;
@@ -99,8 +108,6 @@ section {
     background: #fff;
     border-radius: 50%;
     margin: auto;
-    animation: blink 0.2s linear;
-    animation-delay: 3s;
 }
 
 /* mouth */
@@ -190,32 +197,36 @@ section {
     }
 }
 
-@keyframes blink {
-    0% {
-        height: 1.5rem;
-    }
-
-    25% {
-        height: 0rem;
-    }
-
-    50% {
-        height: 1.5rem;
-    }
-
-    75% {
-        height: 0rem;
-    }
-
-    100% {
-        height: 1.5rem;
-    }
-}
-
 /* time */
 #time {
     color: #860d00;
     font-size: 20px;
     font-family: 'Fredoka One', cursive;
     letter-spacing: 7px;
+}
+
+/* music */
+#sound {
+    width: 30em;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 5em;
+}
+
+button {
+    padding: 1em 5em;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 4px;
+    border: none;
+    border-radius: 20px;
+    background-color: #860d00;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button:hover{
+    background-color: #FF4449;
+    color: white;
 }
